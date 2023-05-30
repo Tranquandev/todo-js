@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Todos</h1>
+      <div class="todo-app">
+        <div class="header">
+          <form class="form">
+            <div class="form-toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              class="form-input"
+              placeholder="What needs to be done?"
+            />
+          </form>
+        </div>
+        <div class="main">
+          <ul class="todo-list"></ul>
+        </div>
+        <div class="footer">
+          <span class="item-count">4 item left</span>
+          <div class="filter-list">
+            <span class="filter-item active">All</span>
+            <span class="filter-item">Active</span>
+            <span class="filter-item">Completed</span>
+          </div>
+          <span class="clear-completed">Clear completed</span>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
